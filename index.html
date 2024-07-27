@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quest: Flex Container: Align Content</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <h1>Align-content</h1>
+    <p>O <strong>align-content</strong> alinha os elementos no <strong>eixo-transversal</strong> quando tem espaço no <strong>container</strong>. <mark>ATENÇÃO</mark>: se houver poucos elementos no <strong>container</strong>, devemos <i>estilizar</i> o <strong>container</strong> com <strong>flex-wrap</strong>: <i>wrap</i>, ficará assim: <br> <strong>.div-do-container</strong> &lcub; <br> &nbsp; &nbsp; &nbsp; &nbsp; flex-wrap: wrap; <br> &rcub; <br> Para que visualmente fique mais claro.</p>
+
+    <section>
+        <h2>flex-start</h2>
+        <p>O <strong>flex-start</strong> alinha os elementos no <i>topo</i> do <strong>eixo-transversal</strong>.</p>
+        <div class="container flex-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>flex-end</h2>
+        <p>Já o <strong>flex-end</strong> alinha os elementos no <i>fim</i> do <strong>eixo-transversal</strong>.</p>
+        <div class="container flex-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>center</h2>
+        O <strong>center</strong> colocará os elementos no <i>centro</i> do <strong>eixo-transversal</strong>.</p>
+        <div class="container center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>stretch</h2>
+        <p>O <strong>stretch</strong> é o <i>valor</i> padrão do <strong>align-content</strong>. <mark>ATENÇÃO</mark>: para que o <strong>stretch</strong> funcione não podemos colocar <i>valor</i> de <strong>height</strong></p>
+        <div class="container stretch">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>space-between</h2>
+        <p>O <strong>space-between</strong> acidiona um espaço uniforme entre os elementos, mas os deixa próximo as bodas. <mark>ATENÇÃO</mark>: o <strong>container</strong> precisa ter bastante elementos para que o <strong>space-between</strong> possa ser notado</p>
+        <div class="container space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>space-around</h2>
+        <p>O <strong>space-around</strong> também acidiona um espaço uniforme entre os elementos, e diferente do <strong>space-between</strong> o <strong>space-around</strong> também adiciona um espaço uniforme entre os elementos e as bordas: superior e inferior. <mark>ATENÇÃO</mark>: o <strong>container</strong> precisa ter bastante elementos para que o <strong>space-around</strong> possa ser notado</p>
+        <div class="container space-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>space-evenly</h2>
+        <p>O <strong>space-evenly</strong> também acidiona um espaço uniforme entre os elementos e entre os elementos e as bordas: superior e inferior, mas o <strong>space-evenly</strong>, mas o <strong>space-evenly</strong>, deixa o espaço uniforme, não ficando dobrado entre os elementos. <mark>ATENÇÃO</mark>: o <strong>container</strong> precisa ter bastante elementos para que o <strong>space-evenly</strong> possa ser notado</p>
+        <div class="container space-evenly">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+</body>
+</html>

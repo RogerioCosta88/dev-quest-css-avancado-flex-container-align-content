@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #ff1430;
+    color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px #000;
+    transform: translate(ease-in-out);
+}
+
+h1:hover {
+    background-color: #000;
+    color: #ff1430;
+    box-shadow: 5px 5px 5px #ff1430;
+    transition: 1s;
+}
+
+h2 {
+    background-color: #000;
+    color: #fff;
+    width: 450px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #ff1430;
+    transform: translate(ease-in-out);
+}
+
+h2:hover {
+    background-color: #ff1430;
+    color: #000;
+    width: 400px;
+    box-shadow: 5px 5px 5px #000;
+    transition: 1s;
+}
+
+p {
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    height: 300px;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.container.flex-start {
+    align-content: flex-start;
+    
+}
+
+.container.flex-start div {
+    width: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container.flex-end {
+    align-content: flex-end;
+    
+}
+
+.container.flex-end div {
+    width: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container.center {
+    align-content: center;
+}
+
+.container.center div {
+    width: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+.container.stretch {
+    align-content: stretch;
+}
+
+.container.stretch div {
+    width: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container.space-between {
+    align-content: space-between;
+}
+
+.container.space-between div {
+    width: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container.space-around {
+    align-content: space-around;
+    
+}
+
+.container.space-around div {
+    width: 100px;
+    height: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.container.space-evenly {
+    align-content: space-evenly;
+    
+}
+
+.container.space-evenly div {
+    width: 100px;
+    height: 100px;
+    background-color: #ff1430;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.flex-start .item, .flex-end .item, .center .item, .stretch .item {
+    flex: 1;
+}
